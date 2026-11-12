@@ -65,6 +65,9 @@ void nb__ipc_init(const char* sock_path, int mode);
 void nb__ipc_deinit();
 void nb__mlx5_init(const char* name);
 
+// Transport specific API of DPDK
+int nb__dpdk_init(int argc, char **argv);
+void nb__dpdk_deinit(void);
 
 /*
 char* nb__request_send_buffer(void);
